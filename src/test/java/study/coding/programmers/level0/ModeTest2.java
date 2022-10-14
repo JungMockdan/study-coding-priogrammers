@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 
 import static org.junit.Assert.assertEquals;
 
-public class FreqencyNumTest {
+public class ModeTest2 {
     @Test
     @DisplayName(value = "")
     public void 테스트이름() {
