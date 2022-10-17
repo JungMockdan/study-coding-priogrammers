@@ -20,6 +20,8 @@ public class ModeTest2 {
 
     }
 
+
+
     public int solution(int[] array, int n) {
         int answer = 0;
         return answer;
