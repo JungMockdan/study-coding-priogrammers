@@ -51,11 +51,17 @@ public class SortStringTest2 {
             char c = String.valueOf(my_string.charAt(i)).toLowerCase().charAt(0);
             nums[i] = (int)c;
         }
-        Arrays.stream(nums).sorted();
-        for (int i = 0; i < nums.length; i++) {
-            char chr = (char) nums[i];
+        int[] ints = Arrays.stream(nums).sorted().boxed().mapToInt(value -> value).toArray();
+        for (int i = 0; i < ints.length; i++) {
+            char chr = (char) ints[i];
             answer+=String.valueOf(chr).toLowerCase();
         }
         return answer;
+    }
+
+    public String _short(String my_string) {
+        char[] c = my_string.toLowerCase().toCharArray();
+        Arrays.sort(c);
+        return new String(c);
     }
 }
